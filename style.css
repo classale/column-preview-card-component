@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Big+Shoulders+Display:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Lexend+Deca:100,200,300,regular,500,600,700,800,900);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-family: "Big Shoulders Display", Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.category p {
+    font-size: 1.25rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    height: 100vh;
+    padding: 60px;
+}
+
+.Sedans {
+    background-color: #E28625;
+}
+
+.Sedans button {
+    color: #E28625;
+}
+
+.Suvs {
+    background-color: #006971;
+}
+
+.Suvs button {
+    color: #006971;
+}
+
+.Luxury {
+    background-color: #004140;
+}
+
+.Luxury button {
+    color: #004140;
+}
+
+button {
+    padding: 13px;
+    font-size: 1.5rem;
+    border-radius: 10000000000000000000px;
+    width: 65%;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    background-color: white;
+}
+
+button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.icon {
+    border-radius: 100000000000px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.2014);
+    width: min-content;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.icon img {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
+
+@media screen and (min-width: 720px) {
+    body {
+        flex-direction: row;
+    }
+    .category {
+        padding: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
